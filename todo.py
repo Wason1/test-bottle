@@ -28,7 +28,7 @@ soup = bs4.BeautifulSoup(response.text, 'html.parser')
 indiatable=soup.find('table',{'class':"wikitable"})
 df1=pd.read_html(str(indiatable))
 # convert list to dataframe
-df1=pd.DataFrame(df[0])
+df1=pd.DataFrame(df1[0])
 listw = df1.values.tolist()
 x = df1.columns
 y = x.tolist()
